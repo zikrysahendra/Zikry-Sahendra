@@ -1,0 +1,142 @@
+/* Background utama */
+body {
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO FULLSCREEN */
+.hero {
+  min-height: 100vh;             /* penuh 1 layar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+}
+
+.hero .row {
+  align-items: center;
+}
+
+/* Animasi zoom untuk hero */
+.hero .profile-image img,
+.hero h2, .hero h3, .hero .social-icons {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 0.8s forwards ease-out;
+}
+
+.hero h2 { animation-delay: 0.2s; }
+.hero h3 { animation-delay: 0.4s; }
+.hero .social-icons { animation-delay: 0.6s; }
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Foto profil */
+.profile-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid #d32f2f;
+  box-shadow: 0 0 40px rgba(211,47,47,0.6);
+}
+
+/* Highlight warna merah */
+.highlight {
+  color: #d32f2f;
+}
+
+/* Ikon sosial */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #d32f2f;
+  border-radius: 50%;
+  margin: 0 8px;
+  color: #d32f2f;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  background: #d32f2f;
+  color: #fff;
+}
+
+/* Tombol */
+.btn-custom {
+  border: 2px solid #d32f2f;
+  color: #d32f2f;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn-custom:hover {
+  background: #d32f2f;
+  color: #fff;
+}
+
+/* Card JSON */
+.json-card {
+  background: #4b4b4b;
+  color: #fafafa;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 5px 11px rgba(0,0,0,0.4);
+  font-family: "Courier New", monospace;
+  font-size: 17px;
+}
+
+/* About card */
+.about-card {
+  background: #f5f5f5;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.about-card h4 {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Skills */
+.skills ul {
+  list-style: circle;
+  padding-left: 20px;
+}
+.skills li {
+  margin-bottom: 8px;
+}
+
+/* Languages & Tools Icons */
+.tech-icons {
+  gap: 12px;
+}
+.tech-icon {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 5px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tech-icon img {
+  max-width: 40px;
+  max-height: 40px;
+}
