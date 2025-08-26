@@ -140,3 +140,191 @@ body {
   max-width: 40px;
   max-height: 40px;
 }
+
+/* ===== Education Section (Fullscreen) ===== */
+.education-section {
+  min-height: 100vh; /* fullscreen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #1B2B34, #243B4A);
+  border-radius: 0; /* fullscreen rata */
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.4);
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.container-education {
+  width: 100%;
+  max-width: 1100px;
+  animation: zoomInEducation 0.8s ease-out forwards;
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+@keyframes zoomInEducation {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.education-section h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Education items */
+.education-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 30px;
+  flex-wrap: wrap; /* responsive biar stack di layar kecil */
+}
+
+.education-img img {
+  width: 320px;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease;
+}
+.education-img img:hover {
+  transform: scale(1.05);
+}
+
+.education-text {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+.education-text h3 {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.education-text p {
+  margin: 6px 0;
+  color: #d1d1d1;
+}
+
+/* ===== Projects Section ===== */
+.projects-section {
+  min-height: 100vh; /* fullscreen */
+  padding: 70px 10%;
+  background: linear-gradient(135deg, #243B4A, #1B2B34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-projects {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.3rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.projects-section .subtitle {
+  font-size: 1rem;
+  color: #d1d1d1;
+  margin-bottom: 50px;
+}
+
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay effect */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+  padding: 20px;
+  text-align: center;
+}
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #d32f2f; /* biar konsisten dengan highlight merah */
+}
+.project-overlay p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+/* ===== About + Skills Fullscreen Section ===== */
+.about-skills {
+  min-height: 100vh;   /* fullscreen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: #fff;
+}
+
+.about-skills h3, 
+.about-skills h4, 
+.about-skills h5, 
+.about-skills p, 
+.about-skills li {
+  color: #fff;
+}
+
+.about-skills .json-card, 
+.about-skills .about-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+}

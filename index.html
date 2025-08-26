@@ -23,7 +23,7 @@
         <!-- Foto -->
         <div class="col-md-6 text-center mb-4 mb-md-0">
           <div class="profile-image">
-            <img src="foto.png" alt="Foto Profil">
+            <img src="main.jpg" alt="Foto Profil">
           </div>
         </div>
         <!-- Teks -->
@@ -43,43 +43,40 @@
     </div>
   </section>
 
-  <!-- SECTION ABOUT -->
-  <section class="about py-5">
-    <div class="container">
-      <div class="row">
-        <!-- Kartu JSON -->
-        <div class="col-md-6 mb-4">
-          <div class="json-card">
+<!-- SECTION ABOUT + SKILLS FULLSCREEN -->
+<section class="about-skills">
+  <div class="container">
+    <div class="row mb-5">
+      <!-- Kartu JSON -->
+      <div class="col-md-6 mb-4">
+        <div class="json-card">
 <pre>
-
-  Name : M. Zikry Sahendra Chan,
-  University : Medan State University
-  Major : Information Technology/Computer Science,
-  Nationality : Indonesian,
-  Age : 20,
-  Favorite_language : Python,
-  Hobby : reading, watching, coding.
-
+  {
+  "Name" : "M. Zikry Sahendra Chan",
+  "University" : "Medan State University",
+  "Major" : "Information Technology/Computer Science",
+  "Nationality" : "Indonesian",
+  "Age" : 20,
+  "Favorite_language" : "Python",
+  "Hobby" : ["reading", "watching", "coding"]
+  }
 </pre>
-          </div>
         </div>
-        <!-- About Me -->
-        <div class="col-md-6">
-          <div class="about-card p-4">
-            <h4>About Me</h4>
-            <hr>
-            <p>
-              I’m a university student majoring in Information Technology, passionate about coding and problem-solving. I may still be learning, but I believe that every line of code I write brings me closer to becoming a better developer. I enjoy experimenting with new technologies, working on small projects, and continuously improving my skills. For me, being a developer is not just about learning—it’s about creating, sharing, and growing step by step.
-            </p>
-          </div>
+      </div>
+      <!-- About Me -->
+      <div class="col-md-6">
+        <div class="about-card p-4">
+          <h4>About Me</h4>
+          <hr>
+          <p>
+            I’m a university student majoring in Information Technology, passionate about coding and problem-solving. I may still be learning, but I believe that every line of code I write brings me closer to becoming a better developer. I enjoy experimenting with new technologies, working on small projects, and continuously improving my skills. For me, being a developer is not just about learning—it’s about creating, sharing, and growing step by step.
+          </p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- SECTION SKILLS -->
-  <section class="skills py-5">
-    <div class="container">
+    <!-- Skills, Languages, and Tools -->
+    <div class="skills-section">
       <h3 class="mb-4"><i data-feather="cpu"></i> Skills, Languages, and Tools</h3>
       <div class="row">
         <!-- Skills List -->
@@ -118,6 +115,73 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION EDUCATION -->
+<section id="education" class="education-section">
+  <div class="container-education">
+    <h2>Educational Background</h2>
+
+    <!-- High School -->
+    <div class="education-item">
+      <div class="education-img">
+        <img src="sma.jpg" alt="High School Image">
+      </div>
+      <div class="education-text">
+        <h3>High School : SMA Negeri 1 Tanjungbalai</h3>
+        <p><strong>Year :</strong> 2022 – 2024</p>
+        <p><strong>Focus :</strong> Science, Mathematics</p>
+        <p><strong>Activities :</strong> Paskibra (Flag Hoisting Team)</p>
+      </div>
+    </div>
+
+    <!-- University -->
+    <div class="education-item">
+      <div class="education-text">
+        <h3>University : Medan State University</h3>
+        <p><strong>Major :</strong> Information Technology</p>
+        <p><strong>Year :</strong> 2024 – Present</p>
+        <p><strong>Focus :</strong> Web Development, Machine Learning, Data Structures</p>
+        <p><strong>GPA :</strong> 3.8 / 4.0</p>
+      </div>
+      <div class="education-img">
+        <img src="unimed.jpg" alt="University Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION PROJECT -->
+<section id="projects" class="projects-section">
+  <div class="container-projects">
+    <h2>My Projects</h2>
+    <p class="subtitle">Some of the works I’ve built and showcased</p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="MoneyManagement.png" alt="Project 1">
+        <div class="project-overlay">
+          <h3>Money Management Tools</h3>
+          <p>This project introduces a Money Management Tool designed to help users organize, track, and analyze their personal finances. It allows users to record income and expenses, categorize transactions, and monitor financial trends over time. The tool aims to improve budgeting, support better decision-making, and promote healthier financial habits.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="HAKI.png" alt="Project 2">
+        <div class="project-overlay">
+          <h3>Implementation of Minor and Cofactor Calculation </h3>
+          <p>This project demonstrates the implementation of minor and cofactor calculations in matrices using Python with NumPy. It highlights how these fundamental linear algebra operations can be efficiently computed and applied through simple, structured code.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   </section>
 
